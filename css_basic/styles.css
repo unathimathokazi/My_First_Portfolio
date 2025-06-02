@@ -1,0 +1,59 @@
+/* Reset margin and ensure full height */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Make main a horizontal flex container */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* takes up the remaining space */
+  }
+  
+  /* Article takes 2/3 of the width */
+  article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Aside takes 1/3 of the width */
+  aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #e9e9e9;
+  }
+  
+  /* Optional: make header and footer look better */
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Optional: style navigation links */
+  header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
