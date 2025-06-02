@@ -13,7 +13,28 @@ body {
     flex-direction: row;
     flex: auto; /* takes up the remaining space */
   }
-  
+
+  header {
+  background-color: #0d1117;
+  color: white;
+  padding: 10px;
+}
+
+header ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
   /* Article takes 2/3 of the width */
   article {
     flex: 2;
